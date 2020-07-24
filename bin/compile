@@ -10,7 +10,8 @@ BP_NAME="libopus"
 
 BIN_DIR=$(cd $(dirname $0); pwd)
 BUILD_DIR=$1
-TMP_DIR="/tmp/$BP_NAME"
+CACHE_DIR=$2
+TMP_DIR="/$CACHE_DIR/$BP_NAME"
 VENDOR_DIR="$BUILD_DIR/.heroku/vendor"
 
 SOURCE_TARBALL='http://downloads.xiph.org/releases/opus/opus-1.2-alpha.tar.gz'
